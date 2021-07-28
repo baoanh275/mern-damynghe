@@ -1,0 +1,89 @@
+:root{
+    --white-color : #fff;
+    --black-color :#000;
+
+
+    --text-color-1: #7279a1;
+    --text-color-2: #7d7d7d;
+    --text-color-3: #555;
+    --text-color-4: #282828;
+    --text-color-5: #111;
+
+    --primary-color: #3ac2cc;
+    --primary-color-2: #b5e2ef;
+    --star-gold-color : #FFCE3E;
+    --border-color: #dbdbdb;    
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+
+}
+
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+    /* Responsive */
+.grid1{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Button Style */
+
+.btn1{
+    min-width: 100px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+.btn1.btn--normal:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.btn1.btn--highlight{
+    border: 1px solid var(--primary-color);
+    color : #0f5132;
+    background-color: var(--primary-color-2);
+}
+.btn1.btn--normal-highlight{
+    border: 1px solid var(--border-color);
+    color : var(--text-color-1);
+    background-color: var(--white-color);
+}
+.btn1.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.btn1.btn--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    
+}
+.btn1.btn--primary:hover{
+    opacity: 0.9;
+}
+
+.btn1.btn--disabled{
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}
